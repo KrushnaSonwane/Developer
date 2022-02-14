@@ -198,7 +198,7 @@ nav{
     .material-icons{
         vertical-align: middle;
     }
-    .mobileLinks a{
+    .mobileLinks .links{
         color: var(--white);
         font-size: 15px;
         text-decoration: none;
