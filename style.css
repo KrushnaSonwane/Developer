@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+html{
+    padding: 0PX;
+    margin: 0px;
+    background-color: #1d1d1d;
+}
+body{
+    font-family: "Open Sans", sans-serif;
+}
+:root{
+    --blue: #42baff;
+    --white: #F8F8F8; 
+    --black:#2c3333;
+    --grey: #334756;
+    --purple: #3D087B;
+}
+i{
+    margin-left: 10px;
+    vertical-align: middle;
+}
+nav{
+    display: block;
+    width: 100%;
+    background-color: #3d087b;
+    height: 55px;
+    box-shadow: 0px 0px 0px 0px;
+    -webkit-box-shadow: 0px 0px 15px 0px black;
+    position: fixed;
+    transition: .05s;
+    top: 0;
+    z-index: 0;
+}
+.navBarClass{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.portfolio{
+    padding: 9px;
+    width: 40%;
+}
+.portfolio2{
+    display: none;
+}
+.portfolio a{
+    font-family: "Poppins", sans-serif;
+    color: var(--blue);
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 25px;
+}
+#portfolio{
+    color: #00c900;
+}
+#dot{
+    color: var(--blue);
+}
+.allLinks{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+.allLinks a{
+    text-decoration: none;
+    color: #d2d2d2;
+    font-family: 'nunito';
+    font-size: 20px;
+    padding: 1% 2%;
+    border: 1px solid #3d087b;
+    border-radius: 10px;
+    transition: .5s;
+    font-weight: 700;
+}
+.allLinks a:hover{
+    border: 1px solid var(--blue);
+    color: var(--blue);
+}
+.homeProfile{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    /* padding: 40px; */
+    border-bottom: 2px solid var(--grey);
+    align-items: center;
+    margin-top: 30px;
+}
+.profileImg{
+    width: 50%;
+    padding: 40px;
+}
+.profileImg img{
+    width: 90%;
+    border-radius: 100%;
+    box-shadow: 0px 0px 2px 5px #0d6efd59;
+    border: 3px dashed #0945ffc4;
+}
+.name{
+    align-self: center;
+    text-align: left;
+    width: 50%;
+}
+.name button{
+    font-size: 20px;
+    height: 45px;
+    margin-top: 15px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.name button:hover{
+    background-color: var(--black);
+}
+.name h1{
+    color: #3E3E3E;
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+.name p{
+    color: blue;
+    font-size: 20px;
+    margin-top: -14px;
+}
+.name h2{
+    color: #5d5d5d;
+    margin-top: 15px;
+    font-size: 26px;
+    font-weight: 700;
+}
+.webDeveloper{
+    color: #009300
+}
+.student{
+    color: #005281;
+}
+.menuBar{
+    display: none;
+}
+.mobileLinks{
+    display: none;
+}
+.show{
+    display: flex;
+}
+.dontShow{
+    display: none;
+}
+.addMargin{
+    margin-top: -15px;
+}
+
+@media only screen and (max-width: 900px){
+    nav{
+        height: 45px;
+    }
+    .mobileLinks{
+        display: flex;
+        flex-direction: column;
+        background-color: var(--black);
+        z-index: 2;
+        /* margin-top: 55px; */
+        height: 600px;
+        transition: all .5s ease-in-out;
+        justify-content: space-around;
+    }
+    .profilePic{
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 20px 20px 20px;
+        border-bottom: 3px solid var(--grey);
+    }
+    .smallImg{
+        width: 91%;
+        text-align: center;
+    }
+    .smallImg h1{
+        color: var(--white);
+        font-weight: 900;
+        margin-top: 8px;
+        font-size: 20px;
+    }
+    .closeTab{
+        width: 9%;
+        color: var(--white);
+        text-align: right;
+    }
+    .closeTab span{
+        font-size: 30px;
+    }
+    .profileImg{
+        padding: 30px;
+    }
+    .profilePic img{
+        width: 200px;
+        border: 6px solid #42b2ff45;
+        border-radius: 126px;
+    }
+    .material-icons{
+        vertical-align: middle;
+    }
+    .mobileLinks a{
+        color: var(--white);
+        font-size: 15px;
+        text-decoration: none;
+        padding-left: 5px;
+        margin-left: 5px;
+        border-left: 2px solid var(--blue);
+    }
+    .mobileLinks a span{
+        font-size: 20px;
+        padding-bottom: 3px;
+    }
+    .shareIcons{
+        /* display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between; */
+    }
+    .shareIcons #wpIcon{
+        color: lime;
+        font-size: 16px;
+    }
+    .shareIcons #githubIcon{
+        color: white;
+        width: 15pxpx;
+        height: 15px;
+    }
+    .shareIcons #fbIcon{
+        color: #4949ff;
+        height: 15px;
+        /* background-color: white; */
+        width: 15px;
+    }
+    .shareIcons #linkedinIcon{
+        color: #4949ff;
+        background-color: white;
+        height: 15px;
+        width: 15px;
+        border-radius: 100px;
+    }
+    .allLinks{
+        display: none;
+    }
+    .portfolio{
+        padding: 9px;
+        width: 40%;
+        text-align: right;
+        width: 80%;
+    }
+    .menuBar{
+        width: 20%;
+        display: block;
+    }
+    .menuBar span{
+        font-size: 49px;
+        margin-left: 5px;
+        color: #b1b1b1;
+    }
+    .homeProfile{
+        flex-direction: column;
+    }
+    .profileImg{
+        width: 100%;
+        text-align: center;
+    }
+    .name{
+        width: 100%;
+        text-align: center;
+    }
+    .name h1{
+        font-size: 36px;
+    }
+    .name h2{
+        font-size: 19px;
+    }
+}
