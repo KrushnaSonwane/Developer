@@ -2,7 +2,7 @@
 html{
     padding: 0PX;
     margin: 0px;
-    background-color: #1d1d1d;
+    /* background-color: #1d1d1d; */
 }
 body{
     font-family: "Open Sans", sans-serif;
@@ -80,9 +80,10 @@ nav{
     display: flex;
     justify-content: space-around;
     /* padding: 40px; */
-    border-bottom: 2px solid var(--grey);
+    border-bottom: 0px solid #27272730;
     align-items: center;
     margin-top: 30px;
+    -webkit-box-shadow: 1px 0px 36px 0px #00000045;
 }
 .profileImg{
     width: 50%;
@@ -105,9 +106,16 @@ nav{
     margin-top: 15px;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
+    transition: .6s;
+    /* transition-property: all; */
 }
 .name button:hover{
     background-color: var(--black);
+}
+.name button:hover i{
+    transition: .5s;
+    margin-left: 25px;
+    /* background-color: var(--black); */
 }
 .name h1{
     color: #3E3E3E;
@@ -139,6 +147,25 @@ nav{
 .mobileLinks{
     display: none;
 }
+
+.aboutMe{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.aboutLogo{
+    width: 50%;
+}
+
+.aboutLogo img{
+    background-color: rgba(255, 171, 122, 0.568);
+    border-radius: 278px;
+    box-shadow: 0px 0px 0px 5px indianred;
+    border: 5px solid white;
+}
+.aboutLogo img:hover{
+    background-color: rgba(255, 255, 124, 0.849);
+}
 .show{
     display: flex;
 }
@@ -152,6 +179,12 @@ nav{
 @media only screen and (max-width: 900px){
     nav{
         height: 45px;
+    }
+    .navBarClass {
+        display: flex;
+        height: 45px;
+        justify-content: space-between;
+        align-items: center;
     }
     .mobileLinks{
         display: flex;
@@ -258,6 +291,7 @@ nav{
     }
     .homeProfile{
         flex-direction: column;
+        padding-bottom: 10px;
     }
     .profileImg{
         width: 100%;
