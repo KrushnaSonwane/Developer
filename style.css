@@ -80,10 +80,11 @@ nav{
     display: flex;
     justify-content: space-around;
     /* padding: 40px; */
-    border-bottom: 0px solid #27272730;
+    border-bottom: 4px solid #0945ff40;
     align-items: center;
     margin-top: 30px;
-    -webkit-box-shadow: 1px 0px 36px 0px #00000045;
+    box-shadow: none;
+    /* -webkit-box-shadow: 1px 0px 36px 0px #00000045; */
 }
 .profileImg{
     width: 50%;
@@ -93,7 +94,7 @@ nav{
     width: 90%;
     border-radius: 100%;
     box-shadow: 0px 0px 2px 5px #0d6efd59;
-    border: 3px dashed #0945ffc4;
+    border: 4px solid #0945ffc4;
 }
 .name{
     align-self: center;
@@ -148,24 +149,82 @@ nav{
     display: none;
 }
 
+
+
+
 .aboutMe{
-    display: flex;
-    justify-content: space-between;
+    padding: 35px 50px;
     width: 100%;
 }
-.aboutLogo{
+.aboutDetails{
     width: 50%;
+    height: 600px;
+    padding: 20px;
+    margin-top: 20px;
+}
+.aboutHeading h1{
+    color: #0945ffc4;
+    font-size: 40px;
+    font-weight: 600;
+    /* border-bottom: 3px solid #0945ffc4; */
+    width: 190px;
+    padding-bottom: 5px;
+}
+.aboutHeading h2{
+    color: #334756de;
+    text-align: justify;
+    margin: 35px 0px 0px 0px;
+    font-size: 27px;
+    font-family: "Poppins", sans-serif;
+}
+.yourDetails{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
 }
 
-.aboutLogo img{
-    background-color: rgba(255, 171, 122, 0.568);
-    border-radius: 278px;
-    box-shadow: 0px 0px 0px 5px indianred;
-    border: 5px solid white;
+
+.aboutDetailsLeft{
+    width: 48%;
+    padding: 15px 20px;
+    /* border: 1px solid grey; */
+    display: flex;
+    flex-direction: column;
+    height: 180px;
+    justify-content: space-between;
+    -webkit-box-shadow: 0px 0px 15px 6px #7e7e7e94;
 }
-.aboutLogo img:hover{
-    background-color: rgba(255, 255, 124, 0.849);
+.aboutDetailsRight{
+    width: 48%;
+    padding: 15px 20px;
+    /* border: 1px solid grey; */
+    display: flex;
+    flex-direction: column;
+    height: 180px;
+    justify-content: space-between;
+    -webkit-box-shadow: 0px 0px 15px 6px #7e7e7e94;
 }
+.oneInfo{
+    display: flex;
+    justify-content: space-between;
+}
+.oneInfo label{
+    width: 30%;
+    color: var(--black);
+    font-weight: 700;
+    font-size: 25px;
+}
+.oneInfo p{
+    width: 70%;
+    color: #676767;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+
+
 .show{
     display: flex;
 }
@@ -243,12 +302,6 @@ nav{
         font-size: 20px;
         padding-bottom: 3px;
     }
-    .shareIcons{
-        /* display: flex;
-        align-items: center;
-        text-align: center;
-        justify-content: space-between; */
-    }
     .shareIcons #wpIcon{
         color: lime;
         font-size: 16px;
@@ -306,5 +359,51 @@ nav{
     }
     .name h2{
         font-size: 19px;
+    }
+
+
+    .aboutMe {
+        padding: 20px 10px;
+        width: 100%;
+    }
+    .aboutHeading h1{
+        font-size: 30px;
+    }
+    .aboutHeading h2{
+        font-size: 20px;
+        margin-top: 10px;
+        font-weight: 600;
+        font-family: serif;
+    }
+    .yourDetails{
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .aboutDetailsLeft{
+        width: 100%;
+        border: none;
+        -webkit-box-shadow: 0px 0px 0px 0px #7e7e7e94;
+        height: 100%;
+        padding: 3px 7px;
+    }
+    .aboutDetailsRight{
+        width: 100%;
+        border: none;
+        -webkit-box-shadow: 0px 0px 0px 0px #7e7e7e94;
+        height: 100%;
+        padding: 3px 7px;
+    }
+    .oneInfo{
+        flex-direction: column;
+    }
+    .oneInfo label{
+        font-size: 22px;
+    }
+    .oneInfo p{
+        font-size: 21px;
+        font-family: monospace;
+    }
+    #colan{
+        display: none;
     }
 }
