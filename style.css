@@ -151,10 +151,12 @@ nav{
 
 
 
+/* About details strats */
 
 .aboutMe{
     padding: 35px 50px;
     width: 100%;
+    border-bottom: 4px solid #0945ff40;
 }
 .aboutDetails{
     width: 50%;
@@ -192,7 +194,7 @@ nav{
     /* border: 1px solid grey; */
     display: flex;
     flex-direction: column;
-    height: 180px;
+    height: 325px;;
     justify-content: space-between;
     -webkit-box-shadow: 0px 0px 15px 6px #7e7e7e94;
 }
@@ -202,7 +204,7 @@ nav{
     /* border: 1px solid grey; */
     display: flex;
     flex-direction: column;
-    height: 180px;
+    height: 325px;
     justify-content: space-between;
     -webkit-box-shadow: 0px 0px 15px 6px #7e7e7e94;
 }
@@ -222,8 +224,42 @@ nav{
     font-weight: 700;
     font-size: 25px;
 }
+/* About details ends */
 
-
+/* Eductaion dtails starts */
+.education{
+    padding: 30px 55px;
+}
+.educationTitle h1{
+    color: #0945ffc4;
+    font-size: 35px;
+    font-weight: 600;
+    /* border-bottom: 3px solid #0945ffc4; */
+    width: 190px;
+    padding-bottom: 5px;
+}
+.collegeDetails .collegeName p{
+    color: #4e4e4e;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+}
+.collegeDetails .collegeName .degree{
+    color: #009a00;
+}
+.collegeYear p{
+    display: table;
+    background-color: #0000ff12;
+    padding: 2px 15px;
+    border: 1px solid #0000ff29;
+    border-radius: 10px;
+    font-size: 17px;
+}
+.collegeName2 p{
+    font-size: 20px;
+    color: #454545;
+}
+/* Education details ends */
 
 .show{
     display: flex;
@@ -250,9 +286,16 @@ nav{
         flex-direction: column;
         background-color: var(--black);
         z-index: 2;
+        width: 100%;
         /* margin-top: 55px; */
         height: 600px;
+        position: fixed;
+        position: absolute;
+        position: fixed;
+        /* top: -2px; */
+        /* right: 74px; */
         transition: all .5s ease-in-out;
+        /* transition: .5s; */
         justify-content: space-around;
     }
     .profilePic{
@@ -398,6 +441,7 @@ nav{
     }
     .oneInfo label{
         font-size: 22px;
+        width: 100%;
     }
     .oneInfo p{
         font-size: 21px;
@@ -406,4 +450,22 @@ nav{
     #colan{
         display: none;
     }
+
+    /* education details starts */
+    .education{
+        padding: 30px 20px;
+    }
+    .educationTitle h1 {
+        font-size: 30px;
+    }
+    .collegeDetails .collegeName p{
+        font-size: 21px;
+    }
+    .collegeYear p{
+        font-size: 15px;
+    }
+    .collegeName2 p{
+        font-size: 17px;
+    }
+    /* educationn details ends */
 }
