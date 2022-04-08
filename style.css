@@ -154,7 +154,7 @@ nav{
 /* About details strats */
 
 .aboutMe{
-    padding: 35px 50px;
+    padding: 35px 20px;
     width: 100%;
     border-bottom: 4px solid #0945ff40;
 }
@@ -166,11 +166,12 @@ nav{
 }
 .aboutHeading h1{
     color: #0945ffc4;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 600;
     /* border-bottom: 3px solid #0945ffc4; */
     width: 190px;
     /* padding-bottom: 5px; */
+    padding-left: 15px;
 }
 .aboutHeading h2{
     color: #334756de;
@@ -178,6 +179,11 @@ nav{
     margin: 17px 0px 0px 0px;
     font-size: 27px;
     font-family: "Poppins", sans-serif;
+    background-color: #a9f9a92e;
+    border: 1px solid #00800042;
+    border-width: thin;
+    padding: 10px 10px;
+    border-radius: 15px;
 }
 .yourDetails{
     width: 100%;
@@ -228,7 +234,11 @@ nav{
 
 /* Eductaion dtails starts */
 .education{
-    padding: 30px 55px;
+    padding: 30px 20px;
+}
+.qualifications{
+    border: 1px solid lightgray;
+    padding: 5px 15px 10px 13px;
 }
 .educationTitle h1{
     color: #0945ffc4;
@@ -237,6 +247,7 @@ nav{
     /* border-bottom: 3px solid #0945ffc4; */
     width: 190px;
     padding-bottom: 5px;
+    padding-left: 15px;
 }
 .enggDetails{
     border-bottom: 2px solid #cecaca;
