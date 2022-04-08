@@ -170,12 +170,12 @@ nav{
     font-weight: 600;
     /* border-bottom: 3px solid #0945ffc4; */
     width: 190px;
-    padding-bottom: 5px;
+    /* padding-bottom: 5px; */
 }
 .aboutHeading h2{
     color: #334756de;
     text-align: justify;
-    margin: 35px 0px 0px 0px;
+    margin: 17px 0px 0px 0px;
     font-size: 27px;
     font-family: "Poppins", sans-serif;
 }
@@ -196,7 +196,7 @@ nav{
     flex-direction: column;
     height: 325px;;
     justify-content: space-between;
-    -webkit-box-shadow: 0px 0px 15px 6px #7e7e7e94;
+    -webkit-box-shadow: 0px 0px 23px 0px #7e7e7e94;
 }
 .aboutDetailsRight{
     width: 48%;
@@ -206,7 +206,7 @@ nav{
     flex-direction: column;
     height: 325px;
     justify-content: space-between;
-    -webkit-box-shadow: 0px 0px 15px 6px #7e7e7e94;
+    -webkit-box-shadow: 0px 0px 23px 0px #7e7e7e94 ;
 }
 .oneInfo{
     display: flex;
@@ -412,7 +412,7 @@ nav{
         text-align: center;
     }
     .name h1{
-        font-size: 36px;
+        font-size: 30px;
     }
     .name h2{
         font-size: 19px;
@@ -420,21 +420,23 @@ nav{
 
 
     .aboutMe {
-        padding: 20px 10px;
+        padding: 6px 10px;
         width: 100%;
     }
     .aboutHeading h1{
-        font-size: 25px;
+        font-size: 22px;
+        padding: 0px;
     }
     .aboutHeading h2{
-        font-size: 15px;
+        /* font-size: 16px;
         margin-top: 10px;
         font-weight: 600;
-        font-family: serif;
+        font-family: serif; */
+        display: none;
     }
     .yourDetails{
         flex-direction: column;
-        margin-top: 10px;
+        margin-top: -5px;
     }
     .aboutDetailsLeft{
         width: 100%;
@@ -454,11 +456,11 @@ nav{
         flex-direction: column;
     }
     .oneInfo label{
-        font-size: 20px;
+        font-size: 18px;
         width: 100%;
     }
     .oneInfo p{
-        font-size: 20px;
+        font-size: 18px;
         font-family: monospace;
     }
     #colan{
@@ -467,19 +469,23 @@ nav{
 
     /* education details starts */
     .education{
-        padding: 30px 20px;
+        padding: 10px 10px;
     }
     .educationTitle h1 {
-        font-size: 23px;
+        font-size: 20px;
+    }
+    .collegeDetails{
+        padding-left: 5px;
+        margin-top: -5px;
     }
     .collegeDetails .collegeName p{
-        font-size: 21px;
+        font-size: 19px;
     }
     .collegeYear p{
         font-size: 15px;
     }
     .collegeName2 p{
-        font-size: 17px;
+        font-size: 15px;
     }
     /* educationn details ends */
 }
