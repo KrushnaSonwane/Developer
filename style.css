@@ -238,6 +238,11 @@ nav{
     width: 190px;
     padding-bottom: 5px;
 }
+.enggDetails{
+    border-bottom: 2px solid #cecaca;
+    padding-bottom: 20px;
+    border-width: thin;
+}
 .collegeDetails .collegeName p{
     color: #4e4e4e;
     font-size: 25px;
@@ -258,6 +263,15 @@ nav{
 .collegeName2 p{
     font-size: 20px;
     color: #454545;
+    /* font-size: 17px; */
+    background-color: #add8e68c;
+    /* border-radius: 0px 223px 84px 0px; */
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    /* width: 89%; */
+    display: initial;
+    /* padding-right: 48px; */
+    padding: 5px 26px 6px 0px;
 }
 /* Education details ends */
 
@@ -410,10 +424,10 @@ nav{
         width: 100%;
     }
     .aboutHeading h1{
-        font-size: 30px;
+        font-size: 25px;
     }
     .aboutHeading h2{
-        font-size: 20px;
+        font-size: 15px;
         margin-top: 10px;
         font-weight: 600;
         font-family: serif;
@@ -440,11 +454,11 @@ nav{
         flex-direction: column;
     }
     .oneInfo label{
-        font-size: 22px;
+        font-size: 20px;
         width: 100%;
     }
     .oneInfo p{
-        font-size: 21px;
+        font-size: 20px;
         font-family: monospace;
     }
     #colan{
@@ -456,7 +470,7 @@ nav{
         padding: 30px 20px;
     }
     .educationTitle h1 {
-        font-size: 30px;
+        font-size: 23px;
     }
     .collegeDetails .collegeName p{
         font-size: 21px;
